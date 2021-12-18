@@ -1,0 +1,250 @@
+body {
+  /* background-image: url(/photo_2021-11-12_14-30-32.jpg); */
+  background: rgb(28, 25, 48);
+  /* background-size: cover;
+    background-position: center;
+    background-repeat: repeat-y; */
+  padding: 0 15px;
+  min-width: 320px;
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1000px;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+.header-inner {
+  display: flex;
+  margin: 20px 0;
+  width: 100%;
+  justify-content: space-between;
+}
+.btn-heder {
+  width: 183px;
+  height: 80px;
+}
+.btn-heder + .btn-heder {
+  margin-left: 10%;
+}
+.mint {
+  text-align: center;
+  margin-bottom: 35px;
+}
+.mint-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.btnMint {
+  text-transform: uppercase;
+}
+.mint-bottom {
+  width: 70%;
+  margin: 0 auto;
+}
+.nft-inner {
+  text-align: center;
+}
+.video {
+  margin-bottom: 45px;
+}
+.swiper-wrapper {
+}
+.slider {
+  margin-bottom: 50px;
+}
+.swiper-slide img {
+  width: 100px;
+}
+.swiper {
+  width: 700px;
+}
+.slider-img {
+}
+.RarityChart {
+}
+.RarityChart-inner {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.RarityChart-items {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 50px;
+}
+.RarityChart-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.RarityChart-item > img {
+  width: 100px;
+  height: auto;
+}
+.FAQ-inner {
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+  letter-spacing: 20px;
+  background: rgb(54, 51, 51);
+}
+.footer {
+}
+.footer-inner {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 20px 0;
+}
+.followUs {
+  border: 2px solid red;
+}
+.icon-follow:nth-child(1) {
+  display: inline-block;
+}
+.icon-follow:nth-child(2) {
+  display: inline-block;
+}
+.icon-follow:nth-child(3) {
+  display: inline-block;
+}
+.icon-follow:nth-child(4) {
+  display: block;
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-item {
+  display: flex;
+  justify-content: center;
+}
+.icon-follow {
+}
+.img-follow {
+}
+.slider-item {
+  transition: all 1s;
+  filter: blur(5px);
+}
+.swiper-slide-next {
+  filter: blur(0);
+}
+.footer-item-btn + .footer-item-btn {
+  margin-top: 10px;
+}
+.header {
+  position: relative;
+}
+.header-followUs {
+  position: absolute;
+  top: -22px;
+  border: 2px solid red;
+}
+.modal-popup {
+  transition: all 1s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.644);
+  position: fixed;
+  z-index: 1;
+  transform: translateY(-1000%);
+  
+}
+.modal-popup-inner {
+  position: fixed;
+  z-index: 2;
+  width: 300px;
+  background: chartreuse;
+  height: 400px;
+}
+.modal-popup-close {
+  padding: 25px;
+  cursor: pointer;
+  text-align: right;
+
+
+
+
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: blueviolet;
+  backdrop-filter: blur(50px);
+  position: relative;
+  box-shadow: 0 0 8px 1px blueviolet inset;
+  position: fixed;
+  transition: all 7s;
+  opacity: 0;
+  
+}
+
+.circle::after {
+  content: "";
+  position: absolute;
+  background: blueviolet;
+  z-index: -1;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
+  top: -3px;
+  right: 3px;
+  filter: blur(9px);
+  border-radius: 50%;
+}
+
+/* timer */
+
+.countdown {
+  font-family: sans-serif;
+  color: #fff;
+  display: inline-block;
+  font-weight: 100;
+  text-align: center;
+  font-size: 30px;
+}
+
+.countdown-number {
+  padding: 10px;
+  border-radius: 3px;
+  background: #00bf96;
+  display: inline-block;
+}
+
+.countdown-time {
+  padding: 15px;
+  border-radius: 3px;
+  background: #00816a;
+  display: inline-block;
+}
+
+.countdown-text {
+  display: block;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.deadline-message{
+  display: none;
+  font-size: 24px;
+  font-style: italic;
+}
+
+.visible{
+  display: block;
+}
+
+.hidden{
+  display: none;
+}
